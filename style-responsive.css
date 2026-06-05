@@ -1,7 +1,7 @@
 @font-face{
     font-family: "Modam Light";
-    src: url("/font/Modam-ExtraLight.ttf") format('truetype')
-    url("../font/Modam-SemiBold.ttf") format('truetype');
+    src: url("font/Modam-ExtraLight.ttf") format('truetype')
+    url("font/Modam-SemiBold.ttf") format('truetype');
 }
 
 html{

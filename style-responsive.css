@@ -1,0 +1,417 @@
+@font-face{
+    font-family: "Modam Light";
+    src: url("/font/Modam-ExtraLight.ttf") format('truetype')
+    url("../font/Modam-SemiBold.ttf") format('truetype');
+}
+
+html{
+    scroll-behavior:smooth;
+    font-size: 10px;
+}
+*{
+    font-family:"Modam Light";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h3{
+    color: #ec7453;
+}
+body{
+    font-family: "Modam Light";
+}
+.overall{
+    font-family: "Modam Light";
+    display: flex;
+    justify-content: center;
+    width:100%;
+    height: 70rem;
+    background: url(../image/programmer.png) no-repeat;
+    background-size:100%;
+    border-bottom: 4px solid white;
+    border-radius:0 0 30px 30px ;
+
+}
+.profile{
+    width: 70rem;
+    height: 15rem;
+    text-align: center;
+    font-size: 30px;
+    align-items: center;
+    line-height: 60px;
+    color: white;
+    background-color:#39393ECC;
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 20px;
+    margin: auto;
+}
+.text{
+    align-items: center;
+}
+.text h2 span{
+    display: inline-block;
+    white-space: nowrap;
+    color: transparent;
+    position: relative;
+}
+.text h2 span::before{
+    content: attr(data-text);
+    overflow: hidden;
+    width: 0;
+    color: white;
+    position: absolute;
+    white-space: nowrap;
+   animation: fill-text 6s  linear infinite;
+}
+
+@keyframes fill-text{
+    10%,100%{
+        width: 0;
+    }
+    60%,90%{
+        width: 100%;
+    }
+}
+
+.header{
+    height: 7rem;
+    width: 100%;
+    background-color:#1e5b39;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 0 30px 0 30px;
+}
+.aboutme{
+    width: 100%;
+    height: 80rem;
+    background-color:#00BDBD;
+    
+}
+.text2{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 50px;
+    padding-top: 20px;
+  
+}
+.cantainer_text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.image{
+    margin-top: 50px;
+    border-radius: 50%;
+    width:33vw;
+    height:34vw;
+    border:0.35rem dashed black;
+}
+.textabout{
+    font-size: 1.9rem;
+    color: white;
+    line-height: 40px;
+}
+.html-css{
+    display: flex;
+    flex-direction: column;
+    
+}
+.programmer{
+    width: 15rem;
+    height: 15rem;
+    margin-top: 20px;
+
+}
+
+.Skill{
+    width: 100%;
+    height: 40rem;
+    background-color: #EEEEEE;
+}
+.text3{
+    text-align: center;
+    font-size: 30px;
+    padding-top:20px ;
+}
+.section-skill{
+    display:flex ;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+.box1,.box2{
+    background-color: white;
+    width: 80%;
+    height: 3rem;
+    border-radius:10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.section-box1{
+    width: 95%;
+    height: 100%;
+   background: linear-gradient(to left, red 0%, red 100%);
+   background-size: 0% 100%;
+   background-repeat: no-repeat;
+   transition: background-size 1.5s ease;
+    background-position: right;
+}
+.section-box1.animate {
+  background-size: 100% 100%;
+}
+.section-box2{
+     width: 80%;
+    height: 100%;
+   background: linear-gradient(to right, red 0%, red 100%);
+   background-size: 0% 100%;
+   background-repeat: no-repeat;
+   transition: background-size 1.5s ease;
+    background-position:left;
+}
+.section-box2.animate {
+  background-size: 100% 100%;
+}
+.section-box3{
+     width: 40%;
+    height: 100%;
+   background: linear-gradient(to left, red 0%, red 100%);
+   background-size: 0% 100%;
+   background-repeat: no-repeat;
+   transition: background-size 1.5s ease;
+    background-position:right;
+}
+.section-box3.animate {
+  background-size: 100% 100%;
+}
+.section-box4{
+     width:20%;
+    height: 100%;
+   background: linear-gradient(to right, red 0%, red 100%);
+   background-size: 0% 100%;
+   background-repeat: no-repeat;
+   transition: background-size 1.5s ease;
+    background-position:left;
+}
+.section-box4.animate {
+  background-size: 100% 100%;
+}
+
+
+
+
+.text4{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+}
+.section-ta{
+    display: flex;
+    gap:40px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+.image-ta{
+    width:180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 0.5px solid black;
+}
+.section-text{
+    font-size: 19px;
+    padding: 15px;
+    background-color:#EEEEEE ;
+    border-radius: 20px;
+    line-height: 35px;
+    width: 50%;
+    word-spacing:10px;
+    white-space:nowrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.work{
+    width: 100%;
+    background-color: #EEEEEE ;
+    padding: 0 250px 20px 250px;
+}
+.text5{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+.section-work1,.section-work2{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.section-work1{
+    justify-content: flex-start;
+    
+}
+.section-work2{
+    justify-content: flex-end;
+}
+.section-text-work{
+    font-size: 19px;
+    line-height: 35px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.section-img-work{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 0.5px solid black;
+}
+.text6{
+    font-size: 30px;
+    text-align: center;
+    padding:20px 0 20px 0;
+}
+.section-Communication{
+    background-color:#474D5D;
+    width: 100%;
+    height: 400px;
+    border-top:5px solid red;
+}
+.section-Communication{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    /* align-items: center; */
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-family: "Modam SemiBold";
+}
+.section-phone{
+    font-size: 19px;
+    line-height: 35px;
+    color: #93959C;
+}
+input{
+    width: 280px;
+    height: 35px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 7px;
+    font-size: 19px;
+    border-radius: 3px;
+    color: white;
+    background-color: #585F73;
+    outline: none;
+    border: none;
+}
+::placeholder{
+    color: white;
+}
+textarea{
+    width:580px;
+    height: 70px;
+    border-radius: 3px;
+    background-color: #585F73;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 17px;
+}
+.button-communication{
+    width: 130px;
+    height: 40px;
+    font-size: 17px;
+    background-color: #ffd600;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+.button-communication:active{
+    background-color: #cdaa00;
+    
+}
+
+.manege{
+    width: 30rem;
+    height: 13rem;
+    background-color: #00FF00;
+    position: fixed;
+    bottom: 20px;
+    left:20px;
+    border-radius: 15px;
+    padding: 10px;
+    border: 0.5px solid blue;
+    font-size: 1.5rem;
+}
+.Hello{
+    width: 5rem;
+    height: 5rem;
+
+}
+.elemtor{
+    display: flex;
+    justify-content: space-between;
+    align-items:self-start;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media screen and (max-width: 992px){
+    .cantainer_text{flex-direction:column;text-align:center;gap:30px;}
+    .html-css{flex-direction:row;justify-content:center;gap:20px;}
+    .work{padding:20px;}
+    .section-work1,.section-work2{justify-content:center;}
+    .section-Communication{flex-direction:column;align-items:center;height:auto;padding:40px 20px;}
+    textarea{width:100%;}
+}
+@media screen and (max-width:768px){
+    .overall{height:50rem;background-size:cover;background-position:center;}
+    .profile{width:95%;font-size:20px;line-height:40px;}
+    .header{height:auto;padding:10px;}
+    nav{display:flex;flex-wrap:wrap;justify-content:center;}
+    .link{margin:8px;font-size:16px;}
+    .aboutme{height:auto;padding-bottom:40px;}
+    .image{width:220px;height:220px;}
+    .textabout{font-size:16px;line-height:30px;text-align:center;}
+    .programmer{width:90px;height:90px;}
+    .Skill{height:auto;padding-bottom:30px;}
+    .section-skill{flex-direction:column;gap:20px;}
+    .box1,.box2{width:100%;}
+    .section-ta{flex-direction:column;}
+    .section-text{width:95%;white-space:normal;font-size:16px;line-height:30px;}
+    .work{padding:15px;}
+    .section-work1,.section-work2{flex-direction:column;text-align:center;gap:20px;}
+    .section-img-work{width:150px;height:150px;}
+    .section-text-work{width:100%;font-size:16px;}
+    .section-Communication{height:auto;gap:30px;}
+    .form{width:100%;}
+    input{width:100%;margin-left:0;}
+    textarea{width:100%;}
+    .button-communication{width:100%;}
+    .section-phone{text-align:center;}
+    .manege{width:240px;height:auto;left:10px;bottom:10px;}
+}
+@media screen and (max-width:480px){
+    html{font-size:8px;}
+    .profile{font-size:18px;}
+    .image{width:180px;height:180px;}
+    .programmer{width:70px;height:70px;}
+    .section-img-work{width:120px;height:120px;}
+}

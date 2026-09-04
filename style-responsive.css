@@ -1,7 +1,7 @@
 @font-face{
     font-family: "Modam Light";
-    src: url("/font/Modam-ExtraLight.ttf") format('truetype')
-    url("../font/Modam-SemiBold.ttf") format('truetype');
+    src: url("font/Modam-ExtraLight.ttf") format('truetype')
+    url("font/Modam-SemiBold.ttf") format('truetype');
 }
 
 html{
@@ -26,7 +26,7 @@ body{
     justify-content: center;
     width:100%;
     height: 70rem;
-    background: url(../image/programmer.png) no-repeat;
+    background: url(image/programmer.png) no-repeat;
     background-size:100%;
     border-bottom: 4px solid white;
     border-radius:0 0 30px 30px ;
